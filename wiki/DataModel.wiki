@@ -28,9 +28,9 @@ Sprint tasks are worked on during a sprint, and their completion is recorded in 
   * Started
   * Completed
 
-= Model =
+= Model (Not Normalized) =
 
-  * Item: ID, Title, Description, Team, Priority, Effort, Status, Sprint, Tasks
-  * Task: ID, Title, Description, Team Member, Effort, Status, Sprint
+  * Item: ID, Title, Description, Team, Priority, Effort, Status, Sprint, Tasks, Notes, References, Dependencies
+  * Task: ID, Title, Description, Team Member, Effort, Status, Sprint, Dependencies
   * Sprint: ID, Team, Start, End, Tasks
   * Team: ID, Title, Team Members

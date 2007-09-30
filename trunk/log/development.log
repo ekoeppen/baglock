@@ -28,3 +28,1007 @@ Migrating to Developers (4)
   [4;35;1mSQL (0.007426)[0m   [0mSHOW KEYS FROM sprints[0m
   [4;36;1mSQL (0.006918)[0m   [0;1mSHOW FIELDS FROM tasks[0m
   [4;35;1mSQL (0.065306)[0m   [0mSHOW KEYS FROM tasks[0m
+ItemController: missing default helper path item_helper
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-09-30 19:31:26) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"action"=>"index", "controller"=>"item"}
+
+
+NameError (uninitialized constant Item):
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:266:in `load_missing_constant'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:452:in `const_missing'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:464:in `const_missing'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/inflector.rb:250:in `constantize'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/core_ext/string/inflections.rb:148:in `constantize'
+    .//vendor/plugins/active_scaffold/lib/config/core.rb:151:in `model'
+    .//vendor/plugins/active_scaffold/lib/config/core.rb:89:in `initialize'
+    .//vendor/plugins/active_scaffold/lib/active_scaffold.rb:47:in `new'
+    .//vendor/plugins/active_scaffold/lib/active_scaffold.rb:47:in `active_scaffold'
+    .//app/controllers/item_controller.rb:2
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:248:in `load_missing_constant'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:452:in `const_missing'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:464:in `const_missing'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/inflector.rb:250:in `constantize'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/core_ext/string/inflections.rb:148:in `constantize'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1284:in `recognize'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:113:in `handle_dispatch'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:79:in `service'
+    /sw/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /sw/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /sw/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /sw/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /sw/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /sw/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:63:in `dispatch'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/webrick.rb:59
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+ItemController: missing default helper path item_helper
+  [4;36;1mSQL (0.001134)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mItem Columns (0.007821)[0m   [0mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#index (for 127.0.0.1 at 2007-09-30 19:34:48) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"action"=>"index", "controller"=>"item"}
+  [4;36;1mSQL (0.006008)[0m   [0;1mSELECT count(*) AS count_all FROM items [0m
+  [4;35;1mItem Load (0.006202)[0m   [0mSELECT * FROM items LIMIT 0, 15[0m
+Rendering actionlistlayoutfalse within layouts/activescaffold
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/list
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_header (0.04335)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_column_headings (0.07422)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.01177)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.03226)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.08199)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list (0.21265)
+Completed in 0.37882 (2 reqs/sec) | Rendering: 0.33264 (87%) | DB: 0.02116 (5%) | 200 OK [http://localhost/item]
+ItemController: missing default helper path item_helper
+  [4;36;1mItem Columns (0.007333)[0m   [0;1mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#edit (for 127.0.0.1 at 2007-09-30 19:35:03) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"adapter"=>"_list_inline_adapter", "_method"=>"get", "action"=>"edit", "id"=>"1", "controller"=>"item"}
+  [4;35;1mItem Load (0.008785)[0m   [0mSELECT * FROM items WHERE (items.`id` = 1) [0m
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.04244)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00277)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00315)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00283)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00269)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00261)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form (0.17255)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_update_form (0.21752)
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/_list_inline_adapter
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00119)
+Completed in 0.30398 (3 reqs/sec) | Rendering: 0.04928 (16%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/edit/1?_method=get&adapter=_list_inline_adapter]
+ItemController: missing default helper path item_helper
+  [4;36;1mItem Columns (0.010697)[0m   [0;1mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#row (for 127.0.0.1 at 2007-09-30 19:35:07) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"_method"=>"get", "action"=>"row", "id"=>"1", "controller"=>"item"}
+  [4;35;1mItem Load (0.009055)[0m   [0mSELECT * FROM items WHERE (items.`id` = 1) [0m
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.02331)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.06761)
+Completed in 0.09976 (10 reqs/sec) | Rendering: 0.07247 (72%) | DB: 0.01975 (19%) | 200 OK [http://localhost/item/row/1?_method=get]
+ItemController: missing default helper path item_helper
+  [4;36;1mItem Columns (0.006919)[0m   [0;1mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#new (for 127.0.0.1 at 2007-09-30 19:35:10) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"adapter"=>"_list_inline_adapter", "_method"=>"get", "action"=>"new", "controller"=>"item"}
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00283)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00257)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00267)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00257)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00423)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00287)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form (0.05465)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_create_form (0.09852)
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/_list_inline_adapter
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00093)
+Completed in 0.17545 (5 reqs/sec) | Rendering: 0.04262 (24%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/new?_method=get&adapter=_list_inline_adapter]
+ItemController: missing default helper path item_helper
+  [4;35;1mItem Columns (0.006567)[0m   [0mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#create (for 127.0.0.1 at 2007-09-30 19:35:29) [POST]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"item", "record"=>{"status"=>"", "title"=>"", "priority"=>"1", "effort"=>"", "notes"=>"", "description"=>"Create Models"}}
+  [4;36;1mSQL (0.001378)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001960)[0m   [0mINSERT INTO items (`sprint_id`, `status`, `title`, `priority`, `effort`, `notes`, `description`) VALUES(NULL, NULL, NULL, 1, NULL, NULL, 'Create Models')[0m
+  [4;36;1mSQL (0.035572)[0m   [0;1mCOMMIT[0m
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/create.rjs
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.02170)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.05173)
+Completed in 0.72813 (1 reqs/sec) | Rendering: 0.10406 (14%) | DB: 0.04548 (6%) | 200 OK [http://localhost/item/create]
+ItemController: missing default helper path item_helper
+  [4;35;1mItem Columns (0.007674)[0m   [0mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#show (for 127.0.0.1 at 2007-09-30 19:36:09) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"adapter"=>"_list_inline_adapter", "_method"=>"get", "action"=>"show", "id"=>"2", "controller"=>"item"}
+  [4;36;1mItem Load (0.006424)[0m   [0;1mSELECT * FROM items WHERE (items.`id` = 2) [0m
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_show_columns (0.02075)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_show (0.05183)
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/_list_inline_adapter
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00091)
+Completed in 0.12215 (8 reqs/sec) | Rendering: 0.03403 (27%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/2?_method=get&adapter=_list_inline_adapter]
+ItemController: missing default helper path item_helper
+  [4;35;1mItem Columns (0.006970)[0m   [0mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#row (for 127.0.0.1 at 2007-09-30 19:36:12) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"_method"=>"get", "action"=>"row", "id"=>"2", "controller"=>"item"}
+  [4;36;1mItem Load (0.006465)[0m   [0;1mSELECT * FROM items WHERE (items.`id` = 2) [0m
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.02067)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.04562)
+Completed in 0.07884 (12 reqs/sec) | Rendering: 0.05045 (63%) | DB: 0.01343 (17%) | 200 OK [http://localhost/item/row/2?_method=get]
+ItemController: missing default helper path item_helper
+  [4;35;1mItem Columns (0.007108)[0m   [0mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#update_table (for 127.0.0.1 at 2007-09-30 19:37:10) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"action"=>"update_table", "controller"=>"item", "page"=>"1", "sort"=>"description", "sort_direction"=>"ASC"}
+  [4;36;1mSQL (0.269110)[0m   [0;1mSELECT count(*) AS count_all FROM items [0m
+  [4;35;1mItem Load (0.012061)[0m   [0mSELECT * FROM items ORDER BY items.`description` ASC LIMIT 0, 15[0m
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_column_headings (0.09793)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00093)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.04376)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.10346)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.03983)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.10767)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list (0.34694)
+Completed in 0.67361 (1 reqs/sec) | Rendering: 0.35214 (52%) | DB: 0.28828 (42%) | 200 OK [http://localhost/item/update_table?page=1&sort=description&sort_direction=ASC]
+ItemController: missing default helper path item_helper
+  [4;36;1mItem Columns (0.006805)[0m   [0;1mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#update_table (for 127.0.0.1 at 2007-09-30 19:37:13) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"action"=>"update_table", "controller"=>"item", "page"=>"1", "sort"=>"description", "sort_direction"=>"DESC"}
+  [4;35;1mSQL (0.002785)[0m   [0mSELECT count(*) AS count_all FROM items [0m
+  [4;36;1mItem Load (0.008951)[0m   [0;1mSELECT * FROM items ORDER BY items.`description` DESC LIMIT 0, 15[0m
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_column_headings (0.06444)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00093)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.01731)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.04558)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.01987)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.04333)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list (0.18730)
+Completed in 0.24593 (4 reqs/sec) | Rendering: 0.19249 (78%) | DB: 0.01854 (7%) | 200 OK [http://localhost/item/update_table?page=1&sort=description&sort_direction=DESC]
+ItemController: missing default helper path item_helper
+  [4;35;1mItem Columns (0.007489)[0m   [0mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#index (for 127.0.0.1 at 2007-09-30 19:42:09) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"action"=>"index", "controller"=>"item"}
+  [4;36;1mSQL (0.003351)[0m   [0;1mSELECT count(*) AS count_all FROM items [0m
+  [4;35;1mItem Load (0.007786)[0m   [0mSELECT * FROM items ORDER BY items.`description` DESC LIMIT 0, 15[0m
+Rendering actionlistlayoutfalse within layouts/activescaffold
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/list
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_header (0.02369)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_column_headings (0.05058)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00096)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.06261)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.10017)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.03895)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.08452)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list (0.42874)
+Completed in 0.55668 (1 reqs/sec) | Rendering: 0.49928 (89%) | DB: 0.01863 (3%) | 200 OK [http://localhost/item]
+ItemController: missing default helper path item_helper
+  [4;36;1mItem Columns (0.011958)[0m   [0;1mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#index (for 127.0.0.1 at 2007-09-30 19:44:04) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"action"=>"index", "controller"=>"item"}
+  [4;35;1mSQL (0.007631)[0m   [0mSELECT count(*) AS count_all FROM items [0m
+  [4;36;1mItem Load (0.013644)[0m   [0;1mSELECT * FROM items ORDER BY items.`description` DESC LIMIT 0, 15[0m
+Rendering actionlistlayoutfalse within layouts/activescaffold
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/list
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_header (0.02485)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_column_headings (0.04948)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00146)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.61951)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.65650)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.01784)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.04165)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list (0.77378)
+Completed in 0.89250 (1 reqs/sec) | Rendering: 0.83076 (93%) | DB: 0.03323 (3%) | 200 OK [http://localhost/item]
+ItemController: missing default helper path item_helper
+  [4;35;1mItem Columns (0.007526)[0m   [0mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#index (for 127.0.0.1 at 2007-09-30 19:48:12) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"action"=>"index", "controller"=>"item"}
+  [4;36;1mSQL (0.002850)[0m   [0;1mSELECT count(*) AS count_all FROM items [0m
+  [4;35;1mItem Load (0.007917)[0m   [0mSELECT * FROM items ORDER BY items.`description` DESC LIMIT 0, 15[0m
+Rendering actionlistlayoutfalse within layouts/activescaffold
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/list
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_header (0.02334)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_column_headings (0.05291)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00091)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.02659)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.05479)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.01819)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.04144)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list (0.17430)
+Completed in 0.28311 (3 reqs/sec) | Rendering: 0.22790 (80%) | DB: 0.01829 (6%) | 200 OK [http://localhost/item]
+ItemController: missing default helper path item_helper
+  [4;36;1mItem Columns (0.007052)[0m   [0;1mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#nested (for 127.0.0.1 at 2007-09-30 19:48:21) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"associations"=>"tasks", "adapter"=>"_list_inline_adapter", "_method"=>"get", "action"=>"nested", "id"=>"1", "controller"=>"item"}
+  [4;35;1mItem Load (0.006701)[0m   [0mSELECT * FROM items WHERE (items.`id` = 1) [0m
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.association) on line #10 of vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:
+7:     parent_id = params[:id]
+8:     associated_columns.each do | column_name |
+9:       column = active_scaffold_config.columns[column_name]
+10:       association = column.association
+11:       begin
+12:         controller = active_scaffold_controller_for(association.klass)
+13:       rescue ActiveScaffold::ControllerNotFound => error %>
+
+    #{RAILS_ROOT}/vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:10:in `_run_rhtml_47vendor47plugins47active_scaffold47frontends47default47views47_nested46rhtml'
+    #{RAILS_ROOT}/vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:8:in `each'
+    #{RAILS_ROOT}/vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:8:in `_run_rhtml_47vendor47plugins47active_scaffold47frontends47default47views47_nested46rhtml'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `send'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `compile_and_render_template'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:275:in `render_without_active_scaffold'
+    vendor/plugins/active_scaffold/lib/extensions/action_view.rb:45:in `render'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:59:in `render_partial_without_active_scaffold'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /sw/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /sw/lib/ruby/1.8/benchmark.rb:307:in `realtime'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:58:in `render_partial_without_active_scaffold'
+    vendor/plugins/active_scaffold/lib/extensions/action_view.rb:55:in `render_partial'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:850:in `render_partial'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:762:in `render_with_no_layout'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/layout.rb:256:in `render_without_benchmark'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render_without_active_scaffold'
+    /sw/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render_without_active_scaffold'
+    vendor/plugins/active_scaffold/lib/extensions/action_controller.rb:13:in `render'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:786:in `render_to_string'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:44:in `silence'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:786:in `render_to_string'
+    vendor/plugins/active_scaffold/lib/extensions/action_controller.rb:9:in `render'
+    vendor/plugins/active_scaffold/lib/actions/nested.rb:17:in `nested'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:135:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:135:in `custom'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:167:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:167:in `respond'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:161:in `each'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:161:in `respond'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:105:in `respond_to'
+    vendor/plugins/active_scaffold/lib/actions/nested.rb:15:in `nested'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `send'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:449:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /sw/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:113:in `handle_dispatch'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:79:in `service'
+    /sw/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /sw/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /sw/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /sw/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /sw/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /sw/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:63:in `dispatch'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/webrick.rb:59
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+ItemController: missing default helper path item_helper
+  [4;36;1mItem Columns (0.007574)[0m   [0;1mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#nested (for 127.0.0.1 at 2007-09-30 19:49:03) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"associations"=>"tasks", "adapter"=>"_list_inline_adapter", "_method"=>"get", "action"=>"nested", "id"=>"1", "controller"=>"item"}
+  [4;35;1mItem Load (0.006926)[0m   [0mSELECT * FROM items WHERE (items.`id` = 1) [0m
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.association) on line #10 of vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:
+7:     parent_id = params[:id]
+8:     associated_columns.each do | column_name |
+9:       column = active_scaffold_config.columns[column_name]
+10:       association = column.association
+11:       begin
+12:         controller = active_scaffold_controller_for(association.klass)
+13:       rescue ActiveScaffold::ControllerNotFound => error %>
+
+    #{RAILS_ROOT}/vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:10:in `_run_rhtml_47vendor47plugins47active_scaffold47frontends47default47views47_nested46rhtml'
+    #{RAILS_ROOT}/vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:8:in `each'
+    #{RAILS_ROOT}/vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:8:in `_run_rhtml_47vendor47plugins47active_scaffold47frontends47default47views47_nested46rhtml'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `send'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `compile_and_render_template'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:275:in `render_without_active_scaffold'
+    vendor/plugins/active_scaffold/lib/extensions/action_view.rb:45:in `render'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:59:in `render_partial_without_active_scaffold'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /sw/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /sw/lib/ruby/1.8/benchmark.rb:307:in `realtime'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:58:in `render_partial_without_active_scaffold'
+    vendor/plugins/active_scaffold/lib/extensions/action_view.rb:55:in `render_partial'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:850:in `render_partial'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:762:in `render_with_no_layout'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/layout.rb:256:in `render_without_benchmark'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render_without_active_scaffold'
+    /sw/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render_without_active_scaffold'
+    vendor/plugins/active_scaffold/lib/extensions/action_controller.rb:13:in `render'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:786:in `render_to_string'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:44:in `silence'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:786:in `render_to_string'
+    vendor/plugins/active_scaffold/lib/extensions/action_controller.rb:9:in `render'
+    vendor/plugins/active_scaffold/lib/actions/nested.rb:17:in `nested'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:135:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:135:in `custom'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:167:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:167:in `respond'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:161:in `each'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:161:in `respond'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:105:in `respond_to'
+    vendor/plugins/active_scaffold/lib/actions/nested.rb:15:in `nested'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `send'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:449:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /sw/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:113:in `handle_dispatch'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:79:in `service'
+    /sw/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /sw/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /sw/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /sw/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /sw/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /sw/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:63:in `dispatch'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/webrick.rb:59
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+TaskController: missing default helper path task_helper
+  [4;36;1mTask Columns (0.006377)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+
+
+Processing TaskController#index (for 127.0.0.1 at 2007-09-30 19:49:11) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"action"=>"index", "controller"=>"task"}
+  [4;35;1mSQL (0.074388)[0m   [0mSELECT count(DISTINCT tasks.id) AS count_all FROM tasks LEFT OUTER JOIN items ON items.id = tasks.item_id [0m
+  [4;36;1mItem Columns (0.010863)[0m   [0;1mSHOW FIELDS FROM items[0m
+  [4;35;1mTask Load Including Associations (0.011064)[0m   [0mSELECT tasks.`id` AS t0_r0, tasks.`title` AS t0_r1, tasks.`description` AS t0_r2, tasks.`status` AS t0_r3, tasks.`effort` AS t0_r4, tasks.`item_id` AS t0_r5, tasks.`developer_id` AS t0_r6, items.`id` AS t1_r0, items.`title` AS t1_r1, items.`description` AS t1_r2, items.`notes` AS t1_r3, items.`status` AS t1_r4, items.`effort` AS t1_r5, items.`priority` AS t1_r6, items.`sprint_id` AS t1_r7 FROM tasks LEFT OUTER JOIN items ON items.id = tasks.item_id LIMIT 0, 15[0m
+Rendering actionlistlayoutfalse within layouts/activescaffold
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/list
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_header (0.02901)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_column_headings (0.69005)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00104)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_pagination_links (0.03326)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list (0.73888)
+Completed in 1.00567 (0 reqs/sec) | Rendering: 0.79719 (79%) | DB: 0.10269 (10%) | 200 OK [http://localhost/task]
+ItemController: missing default helper path item_helper
+  [4;36;1mItem Columns (0.008511)[0m   [0;1mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#index (for 127.0.0.1 at 2007-09-30 19:49:18) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"action"=>"index", "controller"=>"item"}
+  [4;35;1mSQL (0.002971)[0m   [0mSELECT count(*) AS count_all FROM items [0m
+  [4;36;1mItem Load (0.007914)[0m   [0;1mSELECT * FROM items ORDER BY items.`description` DESC LIMIT 0, 15[0m
+Rendering actionlistlayoutfalse within layouts/activescaffold
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/list
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_header (0.02672)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_column_headings (0.05143)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00090)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.02575)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.05374)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.01632)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.04238)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list (0.17251)
+Completed in 0.28166 (3 reqs/sec) | Rendering: 0.23059 (81%) | DB: 0.01940 (6%) | 200 OK [http://localhost/item]
+ItemController: missing default helper path item_helper
+  [4;35;1mItem Columns (0.006795)[0m   [0mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#index (for 127.0.0.1 at 2007-09-30 19:52:51) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"action"=>"index", "controller"=>"item"}
+  [4;36;1mSQL (0.003149)[0m   [0;1mSELECT count(*) AS count_all FROM items [0m
+  [4;35;1mItem Load (0.010546)[0m   [0mSELECT * FROM items ORDER BY items.`description` DESC LIMIT 0, 15[0m
+Rendering actionlistlayoutfalse within layouts/activescaffold
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/list
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_header (0.04142)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_column_headings (0.06536)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00086)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.02721)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.06005)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.02015)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.04452)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list (0.21414)
+Completed in 0.37824 (2 reqs/sec) | Rendering: 0.30935 (81%) | DB: 0.02049 (5%) | 200 OK [http://localhost/item]
+ItemController: missing default helper path item_helper
+  [4;36;1mItem Columns (0.006708)[0m   [0;1mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#nested (for 127.0.0.1 at 2007-09-30 19:53:00) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"associations"=>"task", "adapter"=>"_list_inline_adapter", "_method"=>"get", "action"=>"nested", "id"=>"1", "controller"=>"item"}
+  [4;35;1mItem Load (0.008031)[0m   [0mSELECT * FROM items WHERE (items.`id` = 1) [0m
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.association) on line #10 of vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:
+7:     parent_id = params[:id]
+8:     associated_columns.each do | column_name |
+9:       column = active_scaffold_config.columns[column_name]
+10:       association = column.association
+11:       begin
+12:         controller = active_scaffold_controller_for(association.klass)
+13:       rescue ActiveScaffold::ControllerNotFound => error %>
+
+    #{RAILS_ROOT}/vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:10:in `_run_rhtml_47vendor47plugins47active_scaffold47frontends47default47views47_nested46rhtml'
+    #{RAILS_ROOT}/vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:8:in `each'
+    #{RAILS_ROOT}/vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:8:in `_run_rhtml_47vendor47plugins47active_scaffold47frontends47default47views47_nested46rhtml'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `send'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `compile_and_render_template'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:275:in `render_without_active_scaffold'
+    vendor/plugins/active_scaffold/lib/extensions/action_view.rb:45:in `render'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:59:in `render_partial_without_active_scaffold'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /sw/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /sw/lib/ruby/1.8/benchmark.rb:307:in `realtime'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:58:in `render_partial_without_active_scaffold'
+    vendor/plugins/active_scaffold/lib/extensions/action_view.rb:55:in `render_partial'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:850:in `render_partial'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:762:in `render_with_no_layout'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/layout.rb:256:in `render_without_benchmark'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render_without_active_scaffold'
+    /sw/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render_without_active_scaffold'
+    vendor/plugins/active_scaffold/lib/extensions/action_controller.rb:13:in `render'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:786:in `render_to_string'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:44:in `silence'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:786:in `render_to_string'
+    vendor/plugins/active_scaffold/lib/extensions/action_controller.rb:9:in `render'
+    vendor/plugins/active_scaffold/lib/actions/nested.rb:17:in `nested'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:135:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:135:in `custom'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:167:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:167:in `respond'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:161:in `each'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:161:in `respond'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:105:in `respond_to'
+    vendor/plugins/active_scaffold/lib/actions/nested.rb:15:in `nested'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `send'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:449:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /sw/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:113:in `handle_dispatch'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:79:in `service'
+    /sw/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /sw/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /sw/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /sw/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /sw/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /sw/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:63:in `dispatch'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/webrick.rb:59
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+ItemController: missing default helper path item_helper
+  [4;36;1mItem Columns (0.007003)[0m   [0;1mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#edit (for 127.0.0.1 at 2007-09-30 19:53:08) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"adapter"=>"_list_inline_adapter", "_method"=>"get", "action"=>"edit", "id"=>"1", "controller"=>"item"}
+  [4;35;1mItem Load (0.009088)[0m   [0mSELECT * FROM items WHERE (items.`id` = 1) [0m
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00306)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00275)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00300)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00262)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00703)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00272)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form (0.05561)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_update_form (0.08457)
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/_list_inline_adapter
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00094)
+Completed in 0.16257 (6 reqs/sec) | Rendering: 0.03462 (21%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/edit/1?_method=get&adapter=_list_inline_adapter]
+ItemController: missing default helper path item_helper
+  [4;36;1mItem Columns (0.007313)[0m   [0;1mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#row (for 127.0.0.1 at 2007-09-30 19:53:15) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"_method"=>"get", "action"=>"row", "id"=>"1", "controller"=>"item"}
+  [4;35;1mItem Load (0.008406)[0m   [0mSELECT * FROM items WHERE (items.`id` = 1) [0m
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.02876)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.05411)
+Completed in 0.08581 (11 reqs/sec) | Rendering: 0.05882 (68%) | DB: 0.01572 (18%) | 200 OK [http://localhost/item/row/1?_method=get]
+TaskController: missing default helper path task_helper
+  [4;36;1mTask Columns (0.008721)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+
+
+Processing TaskController#index (for 127.0.0.1 at 2007-09-30 19:53:24) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"action"=>"index", "controller"=>"task"}
+  [4;35;1mSQL (0.005813)[0m   [0mSELECT count(DISTINCT tasks.id) AS count_all FROM tasks LEFT OUTER JOIN items ON items.id = tasks.item_id [0m
+  [4;36;1mItem Columns (0.006968)[0m   [0;1mSHOW FIELDS FROM items[0m
+  [4;35;1mTask Load Including Associations (0.012826)[0m   [0mSELECT tasks.`id` AS t0_r0, tasks.`title` AS t0_r1, tasks.`description` AS t0_r2, tasks.`status` AS t0_r3, tasks.`effort` AS t0_r4, tasks.`item_id` AS t0_r5, tasks.`developer_id` AS t0_r6, items.`id` AS t1_r0, items.`title` AS t1_r1, items.`description` AS t1_r2, items.`notes` AS t1_r3, items.`status` AS t1_r4, items.`effort` AS t1_r5, items.`priority` AS t1_r6, items.`sprint_id` AS t1_r7 FROM tasks LEFT OUTER JOIN items ON items.id = tasks.item_id LIMIT 0, 15[0m
+Rendering actionlistlayoutfalse within layouts/activescaffold
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/list
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_header (0.02347)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_column_headings (0.04437)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00204)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_pagination_links (0.00957)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list (0.06818)
+Completed in 0.25861 (3 reqs/sec) | Rendering: 0.12202 (47%) | DB: 0.03433 (13%) | 200 OK [http://localhost/task]
+TaskController: missing default helper path task_helper
+  [4;36;1mTask Columns (0.006297)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+
+
+Processing TaskController#new (for 127.0.0.1 at 2007-09-30 19:53:28) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"adapter"=>"_list_inline_adapter", "_method"=>"get", "action"=>"new", "controller"=>"task"}
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00314)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00295)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.01328)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00271)
+ItemController: missing default helper path item_helper
+  [4;35;1mItem Columns (0.007037)[0m   [0mSHOW FIELDS FROM items[0m
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_association_header (0.02398)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00974)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00278)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00294)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00286)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00260)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00262)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_association_record (0.08672)
+  [4;36;1mSQL (0.003031)[0m   [0;1mSELECT count(*) AS count_all FROM items [0m
+  [4;35;1mItem Load (0.008908)[0m   [0mSELECT * FROM items [0m
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_association_footer (0.06226)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_association (0.21158)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form (1.10292)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_create_form (1.12878)
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/_list_inline_adapter
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00092)
+Completed in 1.18823 (0 reqs/sec) | Rendering: 0.03384 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/task/new?_method=get&adapter=_list_inline_adapter]
+TaskController: missing default helper path task_helper
+  [4;36;1mTask Columns (0.006748)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+
+
+Processing TaskController#edit_associated (for 127.0.0.1 at 2007-09-30 19:53:46) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"association"=>"item", "_method"=>"get", "action"=>"edit_associated", "controller"=>"task", "associated_id"=>"1"}
+  [4;35;1mItem Columns (0.006940)[0m   [0mSHOW FIELDS FROM items[0m
+  [4;36;1mItem Load (0.006682)[0m   [0;1mSELECT * FROM items WHERE (items.`id` = 1) [0m
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/edit_associated.rjs
+ItemController: missing default helper path item_helper
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00311)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00276)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00323)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00293)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00265)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_attribute (0.00278)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_form_association_record (0.25051)
+Completed in 0.40160 (2 reqs/sec) | Rendering: 0.30790 (76%) | DB: 0.02037 (5%) | 200 OK [http://localhost/task/edit_associated?_method=get&associated_id=1&association=item]
+TaskController: missing default helper path task_helper
+  [4;35;1mTask Columns (0.006529)[0m   [0mSHOW FIELDS FROM tasks[0m
+
+
+Processing TaskController#create (for 127.0.0.1 at 2007-09-30 19:53:50) [POST]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"commit"=>"Create", "action"=>"create", "controller"=>"task", "associated_id"=>"1", "record"=>{"status"=>"", "title"=>"", "effort"=>"1", "description"=>"Create Item Model", "item"=>{"status"=>"", "title"=>"System definition", "priority"=>"1", "effort"=>"", "id"=>"1", "notes"=>"", "description"=>"Describe the system in plain english"}}}
+  [4;36;1mSQL (0.003947)[0m   [0;1mBEGIN[0m
+  [4;35;1mItem Columns (0.011273)[0m   [0mSHOW FIELDS FROM items[0m
+  [4;36;1mItem Load (0.005918)[0m   [0;1mSELECT * FROM items WHERE (items.`id` = 1) [0m
+ItemController: missing default helper path item_helper
+  [4;35;1mSQL (0.002242)[0m   [0mINSERT INTO tasks (`item_id`, `status`, `title`, `effort`, `description`, `developer_id`) VALUES(1, NULL, NULL, 1, 'Create Item Model', NULL)[0m
+  [4;36;1mItem Update (0.052727)[0m   [0;1mUPDATE items SET `title` = 'System definition', `notes` = NULL, `effort` = NULL, `status` = NULL, `sprint_id` = NULL, `priority` = 1, `description` = 'Describe the system in plain english' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.039445)[0m   [0mCOMMIT[0m
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/create.rjs
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.02282)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.04837)
+Completed in 1.05525 (0 reqs/sec) | Rendering: 0.09437 (8%) | DB: 0.12208 (11%) | 200 OK [http://localhost/task/create]
+TaskController: missing default helper path task_helper
+  [4;36;1mTask Columns (0.006548)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+
+
+Processing TaskController#show (for 127.0.0.1 at 2007-09-30 19:53:56) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"adapter"=>"_list_inline_adapter", "_method"=>"get", "action"=>"show", "id"=>"1", "controller"=>"task", "associated_id"=>"1"}
+  [4;35;1mTask Load (0.005852)[0m   [0mSELECT * FROM tasks WHERE (tasks.`id` = 1) [0m
+  [4;36;1mItem Columns (0.006809)[0m   [0;1mSHOW FIELDS FROM items[0m
+  [4;35;1mItem Load (0.006625)[0m   [0mSELECT * FROM items WHERE (items.`id` = 1) [0m
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_show_columns (0.09602)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_show (0.11530)
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/_list_inline_adapter
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00091)
+Completed in 0.18788 (5 reqs/sec) | Rendering: 0.03374 (17%) | DB: 0.00000 (0%) | 200 OK [http://localhost/task/show/1?_method=get&associated_id=1&adapter=_list_inline_adapter]
+TaskController: missing default helper path task_helper
+  [4;36;1mTask Columns (0.006650)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+
+
+Processing TaskController#row (for 127.0.0.1 at 2007-09-30 19:54:07) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"_method"=>"get", "action"=>"row", "id"=>"1", "controller"=>"task", "associated_id"=>"1"}
+  [4;35;1mTask Load (0.011800)[0m   [0mSELECT * FROM tasks WHERE (tasks.`id` = 1) [0m
+  [4;36;1mItem Columns (0.006972)[0m   [0;1mSHOW FIELDS FROM items[0m
+  [4;35;1mItem Load (0.009904)[0m   [0mSELECT * FROM items WHERE (items.`id` = 1) [0m
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.02135)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.13189)
+Completed in 0.16670 (5 reqs/sec) | Rendering: 0.12003 (72%) | DB: 0.03533 (21%) | 200 OK [http://localhost/task/row/1?_method=get&associated_id=1]
+ItemController: missing default helper path item_helper
+  [4;36;1mItem Columns (0.007225)[0m   [0;1mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#index (for 127.0.0.1 at 2007-09-30 19:54:13) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"action"=>"index", "controller"=>"item"}
+  [4;35;1mSQL (0.003050)[0m   [0mSELECT count(*) AS count_all FROM items [0m
+  [4;36;1mItem Load (0.006926)[0m   [0;1mSELECT * FROM items ORDER BY items.`description` DESC LIMIT 0, 15[0m
+Rendering actionlistlayoutfalse within layouts/activescaffold
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/list
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_header (0.02156)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_column_headings (0.05302)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00103)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.03936)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.77342)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.01648)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.04706)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list (0.90826)
+Completed in 1.01384 (0 reqs/sec) | Rendering: 0.96123 (94%) | DB: 0.01720 (1%) | 200 OK [http://localhost/item]
+ItemController: missing default helper path item_helper
+  [4;35;1mItem Columns (0.006587)[0m   [0mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#nested (for 127.0.0.1 at 2007-09-30 19:54:20) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"associations"=>"task", "adapter"=>"_list_inline_adapter", "_method"=>"get", "action"=>"nested", "id"=>"1", "controller"=>"item"}
+  [4;36;1mItem Load (0.008428)[0m   [0;1mSELECT * FROM items WHERE (items.`id` = 1) [0m
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.association) on line #10 of vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:
+7:     parent_id = params[:id]
+8:     associated_columns.each do | column_name |
+9:       column = active_scaffold_config.columns[column_name]
+10:       association = column.association
+11:       begin
+12:         controller = active_scaffold_controller_for(association.klass)
+13:       rescue ActiveScaffold::ControllerNotFound => error %>
+
+    #{RAILS_ROOT}/vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:10:in `_run_rhtml_47vendor47plugins47active_scaffold47frontends47default47views47_nested46rhtml'
+    #{RAILS_ROOT}/vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:8:in `each'
+    #{RAILS_ROOT}/vendor/plugins/active_scaffold/frontends/default/views/_nested.rhtml:8:in `_run_rhtml_47vendor47plugins47active_scaffold47frontends47default47views47_nested46rhtml'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `send'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `compile_and_render_template'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:275:in `render_without_active_scaffold'
+    vendor/plugins/active_scaffold/lib/extensions/action_view.rb:45:in `render'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:59:in `render_partial_without_active_scaffold'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /sw/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /sw/lib/ruby/1.8/benchmark.rb:307:in `realtime'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/partials.rb:58:in `render_partial_without_active_scaffold'
+    vendor/plugins/active_scaffold/lib/extensions/action_view.rb:55:in `render_partial'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:850:in `render_partial'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:762:in `render_with_no_layout'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/layout.rb:256:in `render_without_benchmark'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render_without_active_scaffold'
+    /sw/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render_without_active_scaffold'
+    vendor/plugins/active_scaffold/lib/extensions/action_controller.rb:13:in `render'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:786:in `render_to_string'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:44:in `silence'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:786:in `render_to_string'
+    vendor/plugins/active_scaffold/lib/extensions/action_controller.rb:9:in `render'
+    vendor/plugins/active_scaffold/lib/actions/nested.rb:17:in `nested'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:135:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:135:in `custom'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:167:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:167:in `respond'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:161:in `each'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:161:in `respond'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/mime_responds.rb:105:in `respond_to'
+    vendor/plugins/active_scaffold/lib/actions/nested.rb:15:in `nested'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `send'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:438:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:638:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:449:in `call'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:637:in `call_filter'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /sw/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:113:in `handle_dispatch'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:79:in `service'
+    /sw/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /sw/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /sw/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /sw/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /sw/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /sw/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /sw/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/webrick_server.rb:63:in `dispatch'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/servers/webrick.rb:59
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /sw/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:495:in `require'
+    /sw/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/commands/server.rb:39
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /sw/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /sw/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+ItemController: missing default helper path item_helper
+  [4;35;1mItem Columns (0.006638)[0m   [0mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#show (for 127.0.0.1 at 2007-09-30 19:54:24) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"adapter"=>"_list_inline_adapter", "_method"=>"get", "action"=>"show", "id"=>"1", "controller"=>"item"}
+  [4;36;1mItem Load (0.006411)[0m   [0;1mSELECT * FROM items WHERE (items.`id` = 1) [0m
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_show_columns (0.00996)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_show (0.02761)
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/_list_inline_adapter
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00094)
+Completed in 0.10258 (9 reqs/sec) | Rendering: 0.03808 (37%) | DB: 0.00000 (0%) | 200 OK [http://localhost/item/show/1?_method=get&adapter=_list_inline_adapter]
+ItemController: missing default helper path item_helper
+  [4;35;1mItem Columns (0.007154)[0m   [0mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#row (for 127.0.0.1 at 2007-09-30 19:54:28) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"_method"=>"get", "action"=>"row", "id"=>"1", "controller"=>"item"}
+  [4;36;1mItem Load (0.006634)[0m   [0;1mSELECT * FROM items WHERE (items.`id` = 1) [0m
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.02448)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.05695)
+Completed in 0.08708 (11 reqs/sec) | Rendering: 0.06156 (70%) | DB: 0.01379 (15%) | 200 OK [http://localhost/item/row/1?_method=get]
+ItemController: missing default helper path item_helper
+  [4;35;1mItem Columns (0.008123)[0m   [0mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#index (for 127.0.0.1 at 2007-09-30 19:54:37) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"action"=>"index", "controller"=>"item"}
+  [4;36;1mSQL (0.024865)[0m   [0;1mSELECT count(DISTINCT items.id) AS count_all FROM items LEFT OUTER JOIN tasks ON tasks.item_id = items.id [0m
+  [4;35;1mTask Columns (0.006739)[0m   [0mSHOW FIELDS FROM tasks[0m
+  [4;36;1mItem Load IDs For Limited Eager Loading (0.004368)[0m   [0;1mSELECT id FROM items ORDER BY items.`description` DESC LIMIT 0, 15[0m
+  [4;35;1mItem Load Including Associations (0.089680)[0m   [0mSELECT items.`id` AS t0_r0, items.`title` AS t0_r1, items.`description` AS t0_r2, items.`notes` AS t0_r3, items.`status` AS t0_r4, items.`effort` AS t0_r5, items.`priority` AS t0_r6, items.`sprint_id` AS t0_r7, tasks.`id` AS t1_r0, tasks.`title` AS t1_r1, tasks.`description` AS t1_r2, tasks.`status` AS t1_r3, tasks.`effort` AS t1_r4, tasks.`item_id` AS t1_r5, tasks.`developer_id` AS t1_r6 FROM items LEFT OUTER JOIN tasks ON tasks.item_id = items.id WHERE items.id IN ('1', '2') ORDER BY items.`description` DESC[0m
+Rendering actionlistlayoutfalse within layouts/activescaffold
+Rendering ../../vendor/plugins/active_scaffold/frontends/default/views/list
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_header (0.02416)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_column_headings (0.06441)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_messages (0.00088)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.01901)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.07205)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_actions (0.01560)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list_record (0.06647)
+Rendered ../../vendor/plugins/active_scaffold/frontends/default/views/_list (0.23014)
+Completed in 0.53813 (1 reqs/sec) | Rendering: 0.29683 (55%) | DB: 0.13377 (24%) | 200 OK [http://localhost/item]
+ItemController: missing default helper path item_helper
+  [4;36;1mItem Columns (0.006333)[0m   [0;1mSHOW FIELDS FROM items[0m
+
+
+Processing ItemController#nested (for 127.0.0.1 at 2007-09-30 19:54:50) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"associations"=>"tasks", "adapter"=>"_list_inline_adapter", "_method"=>"get", "action"=>"nested", "id"=>"1", "controller"=>"item"}
+  [4;35;1mItem Load (0.022563)[0m   [0mSELECT * FROM items WHERE (items.`id` = 1) [0m
+TaskController: missing default helper path task_helper
+  [4;36;1mTask Columns (0.007944)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Start rendering component ({:action=>"table", :controller=>"task", :params=>{:eid=>"25ab3d197bb2d89fc1c5f7ac60c4e4e7", :nested=>true, :parent_column=>"tasks", :parent_model=>Item}}): 
+
+
+Processing TaskController#table (for 127.0.0.1 at 2007-09-30 19:54:50) [GET]
+  Session ID: a08e99bf2dfc2510d37f552c34a231d4
+  Parameters: {"parent_column"=>"tasks", "eid"=>"25ab3d197bb2d89fc1c5f7ac60c4e4e7", "nested"=>true, "action"=>"table", "id"=>nil, "controller"=>"task", "parent_model"=>Item}
+  [4;35;1mSQL (0.005358)[0m   [0mSELECT count(DISTINCT tasks.id) AS count_all FROM tasks LEFT OUTER JOIN items ON items.id = tasks.item_id WHERE (tasks.item_id = '1') [0m

@@ -3,3 +3,9 @@
 = System Description =
 
 Terms are defined [http://www.scrumalliance.org/articles/39-glossary-of-scrum-terms here].
+
+The system maintains a product backlog. The backlog describes desired functionality and all other items which are needed to produce a 'done' product. The items on the product backlog are prioritized. The items also have an estimated effort. Units of effort are not further specified, but can be complexity, functionality or time based.
+
+Work is timeboxed in sprints. Each item on the backlog must fit into one sprint. Backlog items are split into tasks. Each task should take no longer than two to three days to complete. Tasks are picked by team members in the spring planning meeting. Splitting backlog items into tasks has to occur before the spring planning meeting to streamline the meeting. Splitting is done as research during a spring, and this research time has to be available to team members. The tasks which are picked by the team members in the spring planning meeting make up the spring backlog.
+
+Sprint tasks are worked on during a sprint, and their completion is recorded in the sprint backlog. A task can be assigned, started, and completed. The number of completed tasks over time makes up the burndown chart.

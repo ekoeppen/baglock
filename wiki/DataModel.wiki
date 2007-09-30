@@ -14,14 +14,23 @@ Sprint tasks are worked on during a sprint, and their completion is recorded in 
 
   * Product Backlog
   * Product Owner
-  * Items
+  * Product Backlog Item
   * Priority
   * Effort
   * Sprint
   * Task
+  * Team
   * Team Member
   * Sprint Planning
   * Sprint Review
+  * Status
   * Assigned
   * Started
   * Completed
+
+= Model =
+
+  * Item: ID, Title, Description, Team, Priority, Effort, Status, Sprint, Tasks
+  * Task: ID, Title, Description, Team Member, Effort, Status, Sprint
+  * Sprint: ID, Team, Start, End, Tasks
+  * Team: ID, Title, Team Members

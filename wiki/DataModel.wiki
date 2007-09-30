@@ -32,5 +32,5 @@ Sprint tasks are worked on during a sprint, and their completion is recorded in 
 
   * Item: ID, Title, Description, Team, Priority, Effort, Status, Sprint, Tasks, Notes, References, Dependencies
   * Task: ID, Title, Description, Team Member, Effort, Status, Sprint, Dependencies
-  * Sprint: ID, Team, Start, End, Tasks
+  * Sprint: ID, Team, Start, End, Items
   * Team: ID, Title, Team Members

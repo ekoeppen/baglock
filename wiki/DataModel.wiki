@@ -4,7 +4,7 @@
 
 Terms are defined [http://www.scrumalliance.org/articles/39-glossary-of-scrum-terms here].
 
-The system maintains a *product backlog*. The backlog describes desired functionality and all other *items* which are needed to produce a 'done' product. The items on the product backlog are *prioritized*. The items also have an estimated *effort*. Units of effort are not further specified, but can be complexity, functionality or time based.
+The system maintains a *product backlog*. The backlog describes desired functionality and all other *items* which are needed to produce a 'done' product. The source of the items is the *product owner*. The items on the product backlog are *prioritized*. The items also have an estimated *effort*. Units of effort are not further specified, but can be complexity, functionality or time based.
 
 Work is timeboxed in *sprints*. Each item on the backlog must fit into one sprint. Backlog items are split into *tasks*. Each task should take no longer than two to three days to complete. Tasks are picked by *team members* in the *sprint planning meeting*. Splitting backlog items into tasks should to occur before the sprint planning meeting to streamline the meeting. Splitting is done as *research* during a sprint, and this research time has to be available to team members. The tasks which are picked by the team members in the sprint planning meeting make up the *sprint backlog*.
 
@@ -13,6 +13,7 @@ Sprint tasks are worked on during a sprint, and their completion is recorded in 
 = Concepts =
 
   * Product Backlog
+  * Product Owner
   * Items
   * Priority
   * Effort

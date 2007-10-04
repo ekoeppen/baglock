@@ -4,5 +4,6 @@ class ItemController < ApplicationController
         config.list.columns = [:title, :description, :priority, :effort, :status, :notes]
         config.nested.add_link("Tasks", [:tasks])
     end
+
     layout "activescaffold"
 end

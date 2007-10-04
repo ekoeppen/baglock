@@ -49,9 +49,26 @@ module ActiveScaffold
       self.active_scaffold_config._load_action_columns
 
       # defines the attribute read methods on the model, so record.send() doesn't find protected/private methods instead
-      # NOTE define_read_methods is an *instance* method even though it adds methods to the *class*.
       klass = self.active_scaffold_config.model
-      klass.new.send(:define_read_methods) if klass.read_methods.empty? && klass.generate_read_methods
+      if klass.respond_to? :generated_methods?
+        # edge rails (2.0)
+        klass.define_attribute_methods unless klass.generated_methods?
+      else
+        # stable rails (1.2.3)
+        # NOTE define_read_methods is an *instance* method even though it adds methods to the *class*.
+        klass.new.send(:define_read_methods) if klass.read_methods.empty? && klass.generate_read_methods
+      end
+
+      # set up the generic_view_paths (Rails 2.x)
+      if method_defined? :generic_view_paths
+        frontends_path = File.join(RAILS_ROOT, 'vendor', 'plugins', ActiveScaffold::Config::Core.plugin_directory, 'frontends')
+
+        paths = []
+        paths << File.join(RAILS_ROOT, 'app', 'views', 'active_scaffold_overrides')
+        paths << File.join(frontends_path, active_scaffold_config.frontend, 'views') if active_scaffold_config.frontend.to_sym != :default
+        paths << File.join(frontends_path, 'default', 'views')
+        self.generic_view_paths = paths
+      end
 
       # include the rest of the code into the controller: the action core and the included actions
       module_eval do
@@ -115,11 +132,5 @@ module ActiveScaffold
     def uses_active_scaffold?
       !active_scaffold_config.nil?
     end
-  end
-end
-
-class Object
-  def as_(string_to_localize, *args)
-    sprintf string_to_localize, *args
   end
 end

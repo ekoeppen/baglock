@@ -17,32 +17,35 @@ module ActionView #:nodoc:
     #   * all new records created will be assigned the constrained values
     #   * constrained columns will be hidden (they're pretty boring at this point)
     #
+    # You may also specify options[:conditions] for the embedded scaffold. These only do 1/3 of what
+    # constraints do (they only limit search results). Any format accepted by ActiveRecord::Base.find is valid.
+    #
     # Defining options[:label] lets you completely customize the list title for the embedded scaffold.
     #
-    def render_with_active_scaffold(*args)
-
+    def render_with_active_scaffold(*args, &block)
       if args.first == :super
         template_path = caller.first.split(':').first
         template = File.basename(template_path)
 
-        ActiveScaffold::Config::Core.template_search_path.each do |active_scaffold_template_path|
+        active_scaffold_config.template_search_path.each do |active_scaffold_template_path|
           active_scaffold_template = File.join(active_scaffold_template_path, template)
           return render :file => active_scaffold_template if file_exists? active_scaffold_template
         end
-      elsif args.first[:active_scaffold]
+      elsif args.first.is_a?(Hash) and args.first[:active_scaffold]
         require 'digest/md5'
         options = args.first
 
         remote_controller = options[:active_scaffold]
         constraints = options[:constraints]
-        eid = Digest::MD5.hexdigest(params[:controller] + remote_controller.to_s + constraints.to_s)
-        session["as:#{eid}"] = {:constraints => constraints, :list => {:label => args.first[:label]}}
+        conditions = options[:conditions]
+        eid = Digest::MD5.hexdigest(params[:controller] + remote_controller.to_s + constraints.to_s + conditions.to_s)
+        session["as:#{eid}"] = {:constraints => constraints, :conditions => conditions, :list => {:label => args.first[:label]}}
         options[:params] ||= {}
         options[:params].merge! :eid => eid
 
         render_component :controller => remote_controller.to_s, :action => 'table', :params => options[:params]
       else
-        render_without_active_scaffold *args
+        render_without_active_scaffold *args, &block
       end
     end
     alias_method :render_without_active_scaffold, :render
@@ -66,44 +69,10 @@ module ActionView #:nodoc:
       return partial_path if file_exists? File.join(path, "_#{partial_name}")
 
       # check the ActiveScaffold-specific directories
-      ActiveScaffold::Config::Core.template_search_path.each do |template_path|
+      active_scaffold_config.template_search_path.each do |template_path|
         return File.join(template_path, partial_name) if file_exists? File.join(template_path, "_#{partial_name}")
       end
       return partial_path
-    end
-  end
-end
-
-module ActionView
-  module Helpers
-    class InstanceTag
-      # patch an issue with integer size parameters
-      def to_text_area_tag(options = {})
-        options = DEFAULT_TEXT_AREA_OPTIONS.merge(options.stringify_keys)
-        add_default_name_and_id(options)
-
-        if size = options.delete("size")
-          options["cols"], options["rows"] = size.split("x") if size.class == String
-        end
-
-        if method(:value_before_type_cast).arity > 0
-          content_tag("textarea", html_escape(options.delete('value') || value_before_type_cast(object)), options)
-        else
-          content_tag("textarea", html_escape(options.delete('value') || value_before_type_cast), options)
-        end
-      end
-
-      private
-
-      # patch in support for options[:name]
-      def options_with_prefix_with_name(position, options)
-        if options[:name]
-          options.merge(:prefix => options[:name].dup.insert(-2, "(#{position}i)"))
-        else
-          options_with_prefix_without_name(position, options)
-        end
-      end
-      alias_method_chain :options_with_prefix, :name
     end
   end
 end

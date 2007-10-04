@@ -8,6 +8,16 @@
    <%= stylesheet_link_tag 'active_scaffold_overrides' %>
 </head>
 <body>
+<table id="app-links-table">
+<tr>
+<td class="link-footer"><a class="app-link" href="item">Backlog</a></td>
+<td class="link-footer"><a class="app-link" href="task">Tasks</a></td>
+<td class="link-footer"><a class="app-link" href="sprint">Sprints</a></td>
+<td class="link-footer"><a class="app-link" href="developer">Developers</a></td>
+</tr>
+</table>
+
    <%= yield %>
+
 </body>
 </html>

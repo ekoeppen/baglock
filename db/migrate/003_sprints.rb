@@ -1,7 +1,7 @@
 class Sprints < ActiveRecord::Migration
     def self.up
         create_table :sprints do |table|
-            table.column :number, :integer
+            table.column :title, :string
             table.column :start, :date
             table.column :end, :date
         end

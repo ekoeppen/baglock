@@ -4,7 +4,7 @@ class Items < ActiveRecord::Migration
             table.column :title, :string
             table.column :description, :string
             table.column :notes, :string
-            table.column :status, :integer
+            table.column :done, :boolean
             table.column :effort, :integer
             table.column :priority, :integer
             table.column :sprint_id, :integer

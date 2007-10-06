@@ -1,5 +1,6 @@
 class Sprint < ActiveRecord::Base
   has_many :items
+  has_many :tasks, :through => :items
   
   def total_effort
     total = 0

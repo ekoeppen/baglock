@@ -3,7 +3,7 @@ class Tasks < ActiveRecord::Migration
         create_table :tasks do |table|
             table.column :title, :string
             table.column :description, :string
-            table.column :status, :integer
+            table.column :completed, :date
             table.column :effort, :integer
             table.column :item_id, :integer
             table.column :developer_id, :integer

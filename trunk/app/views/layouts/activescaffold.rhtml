@@ -2,11 +2,12 @@
        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-   <title>My Application</title>
-   <%= javascript_include_tag :defaults %>
-   <%= active_scaffold_includes %>
-   <%= stylesheet_link_tag 'active_scaffold_overrides' %>
-</head>
+	<title>BagLock</title>
+	<%= javascript_include_tag :defaults %>
+	<%= active_scaffold_includes %>
+	<%= dhtml_calendar_includes %>
+	<%= stylesheet_link_tag 'active_scaffold_overrides' %>
+	<%= stylesheet_link_tag('print', :media => :print) %>
 <body>
 <table id="app-links-table">
 <tr>

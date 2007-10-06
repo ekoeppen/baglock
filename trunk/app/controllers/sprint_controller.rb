@@ -15,6 +15,6 @@ class SprintController < ApplicationController
     config.columns[:start].form_ui = :calendar
     config.columns[:end].form_ui = :calendar
   end
-
+  
   layout "activescaffold"
 end

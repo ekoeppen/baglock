@@ -20,7 +20,9 @@ class Sprint < ActiveRecord::Base
   
   def effort_per_day
     days = {}
-    self.start.upto(self.end) do |day| days[day] = 0 end
+    self.start.upto(self.end) do |day|
+      if day.wday != 0 and day.wday != 6 then days[day] = 0 end
+    end
 
     list = []
     self.tasks.each do |task|

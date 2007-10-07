@@ -6,6 +6,8 @@ class ItemController < ApplicationController
     config.columns[:notes].options = { :rows => 25, :cols => 80 }
     config.columns[:done].form_ui = :checkbox
     config.columns[:id].label = "ID"
+    config.columns[:sprint].form_ui = :select
+    config.columns[:tasks].form_ui = :select
 
     config.list.sorting = { :id => :asc }
     config.nested.add_link("Tasks", [:tasks])

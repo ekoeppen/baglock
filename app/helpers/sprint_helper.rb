@@ -16,7 +16,11 @@ module SprintHelper
     graph.value_formatter = Scruffy::Formatters::Number.new :precision => :none
     first.upto(last) do |day|
       markers << day + 1
-      values << current
+      if efforts[day][1] > 0 then
+        values << current
+      else
+        values << nil
+      end
       current -= efforts[day][1]
     end
     layer = Scruffy::Layers::Line.new :title => 'Remaining Effort', :points => values

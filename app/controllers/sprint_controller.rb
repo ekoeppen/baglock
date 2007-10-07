@@ -18,7 +18,7 @@ class SprintController < ApplicationController
     config.columns[:start].form_ui = :calendar
     config.columns[:end].form_ui = :calendar
     
-    config.columns[:effort_per_day].form_ui = :graph
+#    config.columns[:effort_per_day].form_ui = :graph
   end
   
   layout "activescaffold"

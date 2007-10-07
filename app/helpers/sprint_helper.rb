@@ -22,6 +22,6 @@ module SprintHelper
     graph.add layer
 
     graph.render(:max_value => max_effort, :min_value => 0, :to => "#{RAILS_ROOT}/public/generated/sprint-#{@record.id}-burndown.svg")
-    return "<embed type='image/svg+xml' src='/generated/sprint-#{@record.id}-burndown.svg' width=600 height=360 />"
+    return "<embed type='image/svg+xml' src='/generated/sprint-#{@record.id}-burndown.svg' width=600 height=400 />"
   end
 end

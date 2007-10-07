@@ -59,4 +59,9 @@ end
 
 # Include your application configuration below
 
+Mime::Type.register "image/png", :png
+Mime::Type.register "image/svg+xml", :svg
+
+WEBrick::HTTPUtils::DefaultMimeTypes["svg"] = "image/svg+xml"
+
 require 'scruffy'

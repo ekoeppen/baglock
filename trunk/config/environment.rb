@@ -62,6 +62,8 @@ end
 Mime::Type.register "image/png", :png
 Mime::Type.register "image/svg+xml", :svg
 
-WEBrick::HTTPUtils::DefaultMimeTypes["svg"] = "image/svg+xml"
+if defined? WEBrick then
+  WEBrick::HTTPUtils::DefaultMimeTypes["svg"] = "image/svg+xml"
+end
 
 require 'scruffy'

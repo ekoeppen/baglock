@@ -10,7 +10,9 @@ module SprintHelper
     values = []
     markers = []
 
-    graph = Scruffy::Graph.new :title => 'Sprint Burndown'
+    theme = Scruffy::Themes::RubyBlog.new
+    theme.background = :black
+    graph = Scruffy::Graph.new :title => 'Sprint Burndown', :theme => theme
     graph.value_formatter = Scruffy::Formatters::Number.new :precision => :none
     first.upto(last) do |day|
       markers << day + 1

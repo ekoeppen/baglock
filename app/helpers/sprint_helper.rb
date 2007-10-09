@@ -7,21 +7,21 @@ module SprintHelper
     max_effort = current = @record.total_effort
     first = 0
     last = efforts.length - 1
-    values = []
-    markers = []
+    values = [max_effort]
+    markers = [0]
 
     theme = Scruffy::Themes::RubyBlog.new
     theme.background = :black
     graph = Scruffy::Graph.new :title => 'Sprint Burndown', :theme => theme
     graph.value_formatter = Scruffy::Formatters::Number.new :precision => :none
     first.upto(last) do |day|
+      current -= efforts[day][1]
       markers << day + 1
       if efforts[day][1] > 0 then
         values << current
       else
         values << nil
       end
-      current -= efforts[day][1]
     end
     layer = Scruffy::Layers::Line.new :title => 'Remaining Effort', :points => values
     graph.point_markers = markers

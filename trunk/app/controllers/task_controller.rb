@@ -19,5 +19,9 @@ class TaskController < ApplicationController
       [:item, :title, :description, :effort]
   end
 
+  def create_authorized?
+    return current_user != nil
+  end
+  
   layout "activescaffold"
 end

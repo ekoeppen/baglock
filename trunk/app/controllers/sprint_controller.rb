@@ -18,7 +18,10 @@ class SprintController < ApplicationController
     config.columns[:start].form_ui = :calendar
     config.columns[:end].form_ui = :calendar
     
-#    config.columns[:effort_per_day].form_ui = :graph
+  end
+  
+  def create_authorized?
+    return current_user != nil
   end
   
   layout "activescaffold"

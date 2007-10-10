@@ -16,6 +16,17 @@
 <td class="link-footer"><a class="app-link" href="sprint">Sprints</a></td>
 <td class="link-footer"><a class="app-link" href="developer">Developers</a></td>
 </tr>
+<tr>
+<td class="global-action" colspan="4">
+<% print (@session[:user_id]); print ("\n--------------------------\n") %>
+<% if not @session[:user_id] %>
+<a class="app-link" href="account/login">Login</a> |
+<a class="app-link" href="account/signup">Signup</a>
+<% else %>
+<a class="app-link" href="account/logout">Logout</a>
+<% end %>
+</td>
+</tr>
 </table>
 
    <%= yield %>

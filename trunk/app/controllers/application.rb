@@ -4,4 +4,12 @@
 class ApplicationController < ActionController::Base
   # Pick a unique cookie name to distinguish our session data from others'
   session :session_key => '_BagLock_session_id'
+  
+  def current_user
+    @session[:user_id] ? Login.find(@session[:user_id]) : nil
+  end
+  
+  def current_user=(user)
+    @session[:user_id] = if user then user.id else nil end
+  end
 end

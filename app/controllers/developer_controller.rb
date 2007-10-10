@@ -12,5 +12,9 @@ class DeveloperController < ApplicationController
     config.nested.add_link("Tasks", [:tasks])
   end
 
+  def create_authorized?
+    return current_user != nil
+  end
+  
   layout "activescaffold"
 end

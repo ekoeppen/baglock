@@ -22,5 +22,9 @@ class ItemController < ApplicationController
       [:title, :description, :sprint, :priority, :story_points, :done, :notes, :tasks]
   end
   
+  def create_authorized?
+    return current_user != nil
+  end
+  
   layout "activescaffold"
 end

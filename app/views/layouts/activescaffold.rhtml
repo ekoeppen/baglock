@@ -13,11 +13,12 @@
 <tr>
 <td class="link-footer"><a class="app-link" href="item">Backlog</a></td>
 <td class="link-footer"><a class="app-link" href="task">Tasks</a></td>
+<td class="link-footer"><a class="app-link" href="bug">Bugs</a></td>
 <td class="link-footer"><a class="app-link" href="sprint">Sprints</a></td>
 <td class="link-footer"><a class="app-link" href="developer">Developers</a></td>
 </tr>
 <tr>
-<td class="global-action" colspan="4">
+<td class="global-action" colspan="5">
 <% print (@session[:user_id]); print ("\n--------------------------\n") %>
 <% if not @session[:user_id] %>
 <a class="app-link" href="account/login">Login</a> |

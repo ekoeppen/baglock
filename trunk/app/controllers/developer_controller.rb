@@ -13,8 +13,16 @@ class DeveloperController < ApplicationController
   end
 
   def create_authorized?
-    return current_user != nil
+    return user_can_modify?
   end
-  
+
+  def update_authorized?
+    return user_can_modify?
+  end
+
+  def delete_authorized?
+    return user_can_modify?
+  end
+
   layout "activescaffold"
 end

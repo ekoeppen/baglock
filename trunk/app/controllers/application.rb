@@ -12,4 +12,9 @@ class ApplicationController < ActionController::Base
   def current_user=(user)
     @session[:user_id] = if user then user.id else nil end
   end
+  
+  def user_can_modify?
+    return (current_user != nil and current_user.can_modify)
+  end
+
 end

@@ -7,7 +7,6 @@ class AccountController < ApplicationController
     return unless request.post?
     self.current_user = Login.authenticate(params[:login], params[:password])
     if self.current_user
-      print "Logged in\n"
       respond_to do |wants|
         wants.html {
           redirect_to :controller => '/item', :action => 'index'
@@ -17,8 +16,6 @@ class AccountController < ApplicationController
           render :update do |page| page << 'window.location.href = window.location.href' end
         }
       end
-    else
-      print "Not logged in\n"
     end
   end
 
@@ -42,7 +39,6 @@ class AccountController < ApplicationController
     if request.post?
       @login = Login.new(params[:login]).save!
       redirect_to :action => 'login'
-      print "Signup\n"
     end
   end
 end

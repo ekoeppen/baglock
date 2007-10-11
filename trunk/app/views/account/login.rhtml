@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>BagLock</title>
+	<%= javascript_include_tag :defaults %>
+	<%= active_scaffold_includes %>
+	<%= dhtml_calendar_includes %>
+	<%= stylesheet_link_tag 'active_scaffold_overrides' %>
+	<%= stylesheet_link_tag('print', :media => :print) %>
+<body>
+<table id="app-links-table">
+<tr>
+<td class="link-footer"><a class="app-link" href="/item">Backlog</a></td>
+<td class="link-footer"><a class="app-link" href="/task">Tasks</a></td>
+<td class="link-footer"><a class="app-link" href="/sprint">Sprints</a></td>
+<td class="link-footer"><a class="app-link" href="/developer">Developers</a></td>
+</tr>
+</table>
+
+<%= error_messages_for :login %>
+<% form_tag do -%>
+<p class="active-scaffold"><label for="login">Login</label><br/>
+<%= text_field_tag 'login' %></p>
+
+<p class="active-scaffold"><label for="password">Password</label><br/>
+<%= password_field_tag 'password' %></p>
+
+<p class="active-scaffold"><%= submit_tag 'Log in' %></p>
+<% end -%>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,1 @@
+Simple tool for managing Scrum product backlogs, spring backlogs, tasks
